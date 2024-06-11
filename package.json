@@ -1,0 +1,14 @@
+{
+  "name": "framework-react",
+  "version": "1.0.0",
+  "description": "This is React",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "priyanka",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
