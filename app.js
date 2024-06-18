@@ -14,30 +14,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent=React.createElement(
-    "div",
-    {id:"parent"}, 
-    [
-        React.createElement(
-            "div",
-            {id:"child1"},[
-            React.createElement("h1",{},"This is h1 tag inside child1 and namaste react "),
-            React.createElement("h2",{},"This is h2 tag inside child1")]) ,
-        
-            React.createElement(
-                "div",
-                {id:"child2"},[
-                React.createElement("h1",{},"This is h1 tag inside child2"),
-                React.createElement("h2",{},"This is h2 tag inside child2")]) ,
-                
-
-     ]        
-
-    )
-
-   
-
-       console.log(parent);
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(parent);
-    
+//react element -core react
+const heading=React.createElement("h1",{id:"heading"},"Namaste React");
+const root=ReactDOM.createRoot(document.getElementById("root"));
+//jsx is not html but Like html-HTML like syntax or XML like syntax.
+//jsx-(transpiles before it reaches js )=> parcel=>babel
+//React element using jsx
+//jsx=>React.createElement=>createElement-JS object=>htmlElement(render)
+const jsxHeading=<h1 id="heading">Namaste React using JSX</h1>
+root.render(jsxHeading);
